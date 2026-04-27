@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grand Point Marina | Grand Lake, Oklahoma</title>
+  <meta name="description" content="Grand Point Marina on Grand Lake in Oklahoma. Slip rentals, lake access, live webcam coming soon, and marina booking inquiries." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="top-strip">
+      <span>Grand Lake, Oklahoma</span>
+      <span class="dot"></span>
+      <span>8 slips available</span>
+      <span class="dot"></span>
+      <span>$250/month per slip</span>
+    </div>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Grand Point Marina home">
+        <img src="assets/grand-point-marina-logo.png" alt="Grand Point Marina logo" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#slips">Slip Rentals</a>
+        <a href="#webcam">Live Webcam</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#location">Location</a>
+        <a href="#contact" class="nav-cta">Book a Slip</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-bg" role="img" aria-label="Placeholder Grand Lake marina background"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Chillaxin at Grand Lake</p>
+          <h1 id="hero-title">A clean, easy marina landing page for Grand Point Marina.</h1>
+          <p class="hero-text">Slip rentals, lake updates, future webcam access, and a simple booking form all in one place. Built with a blue, white, and black style that matches the Grand Point Marina logo.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Request a Slip</a>
+            <a href="#webcam" class="btn secondary">View Webcam Section</a>
+          </div>
+          <div class="hero-stats" aria-label="Marina highlights">
+            <div>
+              <strong>8</strong>
+              <span>Slips</span>
+            </div>
+            <div>
+              <strong>$250</strong>
+              <span>Per Month</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Webcam Ready</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Slip rental quick card">
+          <img src="assets/grand-point-marina-logo.png" alt="Grand Point Marina logo" class="card-logo" />
+          <h2>Slip Rentals</h2>
+          <p>Reserve interest in one of 8 monthly boat slips at Grand Point Marina.</p>
+          <div class="price-line">
+            <span>$250</span>
+            <small>/ month</small>
+          </div>
+          <a href="#contact" class="btn full">Check Availability</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section intro-section">
+      <div class="container split-grid">
+        <div class="section-copy reveal">
+          <p class="eyebrow blue">Welcome to the dock</p>
+          <h2>Grand Lake access with a simple, local marina feel.</h2>
+          <p>Grand Point Marina is designed for boaters who want an easy place to rent a slip, check the lake, and stay connected to what is happening around the marina. This landing page is structured so it can grow later into separate pages for rentals, photos, webcam streams, rules, and local lake information.</p>
+        </div>
+        <div class="feature-panel reveal">
+          <div class="feature-icon">⚓</div>
+          <h3>Built to expand</h3>
+          <p>The navigation and section structure are page-ready. Each major section can become its own page later without changing the overall look.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section slip-section" id="slips">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow blue">Slip Rentals</p>
+          <h2>8 slips available at $250/month each.</h2>
+          <p>Use this section to show current slip pricing, availability, and rental details. Availability numbers can be updated directly in the HTML or connected to a backend later.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card reveal">
+            <span class="card-number">01</span>
+            <h3>Monthly Rental</h3>
+            <p>Each boat slip rents for $250 per month. Great for local boat owners who need a regular place on Grand Lake.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="card-number">02</span>
+            <h3>Limited Slips</h3>
+            <p>Grand Point Marina currently has 8 slips. The limited count makes clear availability important for visitors.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="card-number">03</span>
+            <h3>Easy Inquiry</h3>
+            <p>The booking form collects contact details, boat size, preferred start date, and rental length.</p>
+          </article>
+        </div>
+
+        <div class="availability-wrap reveal" aria-label="Slip availability table">
+          <div class="availability-header">
+            <div>
+              <p class="eyebrow white">Availability Snapshot</p>
+              <h3>Slip rental overview</h3>
+            </div>
+            <button class="btn light" type="button" id="refreshAvailability">Refresh Status</button>
+          </div>
+          <div class="slip-list" id="slipList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section webcam-section" id="webcam">
+      <div class="container webcam-grid">
+        <div class="webcam-copy reveal">
+          <p class="eyebrow blue">Coming Soon</p>
+          <h2>Live lake and marina webcam section.</h2>
+          <p>This area is prepared for a live webcam feed of Grand Lake and the marina. When your stream is ready, replace the placeholder box with your live embed, RTSP-to-web player, YouTube live embed, or another streaming provider.</p>
+          <ul class="check-list">
+            <li>Lake view stream placeholder</li>
+            <li>Marina dock stream placeholder</li>
+            <li>Live timestamp display</li>
+          </ul>
+        </div>
+
+        <div class="webcam-card reveal">
+          <div class="webcam-topbar">
+            <span class="live-dot"></span>
+            <span>Webcam Feed Placeholder</span>
+            <time id="liveTime">Loading...</time>
+          </div>
+          <div class="webcam-window">
+            <div class="camera-frame">
+              <span class="camera-icon">◉</span>
+              <h3>Live Camera Coming Soon</h3>
+              <p>Replace this box with your camera embed code.</p>
+            </div>
+          </div>
+          <div class="webcam-tabs" role="tablist" aria-label="Webcam placeholders">
+            <button type="button" class="active" data-camera="Lake View">Lake View</button>
+            <button type="button" data-camera="Marina Dock">Marina Dock</button>
+            <button type="button" data-camera="Boat Slips">Boat Slips</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow blue">Lake Life</p>
+          <h2>Photo areas ready for real marina images.</h2>
+          <p>These placeholder visuals can be swapped with actual photos of Grand Point Marina, the slips, boats, sunset views, or the lakefront.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-card large reveal">
+            <img src="assets/lake-hero.svg" alt="Placeholder lake and dock view" />
+            <figcaption>Grand Lake View</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="assets/marina-view.svg" alt="Placeholder marina slip view" />
+            <figcaption>Marina Slips</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="assets/grand-lake-map.svg" alt="Placeholder Grand Lake map" />
+            <figcaption>Lake Location</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section amenities-section" id="amenities">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow blue">Marina Features</p>
+          <h2>Everything organized for a clear landing page.</h2>
+        </div>
+        <div class="amenity-grid">
+          <div class="amenity reveal"><span>🚤</span><h3>Boat Slip Rentals</h3><p>Monthly slips priced clearly for easy inquiries.</p></div>
+          <div class="amenity reveal"><span>🌊</span><h3>Grand Lake Access</h3><p>Lake-focused design built around the Grand Lake setting.</p></div>
+          <div class="amenity reveal"><span>📷</span><h3>Webcam Ready</h3><p>Prepared for live lake and dock camera feeds.</p></div>
+          <div class="amenity reveal"><span>📍</span><h3>Local Info</h3><p>Space for address, rules, lake conditions, and directions.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location-section" id="location">
+      <div class="container location-grid">
+        <div class="map-card reveal">
+          <img src="assets/grand-lake-map.svg" alt="Stylized Grand Lake Oklahoma map placeholder" />
+        </div>
+        <div class="section-copy reveal">
+          <p class="eyebrow blue">Find Us</p>
+          <h2>Located on Grand Lake in Oklahoma.</h2>
+          <p>Add the full marina address here when ready. This section can later include Google Maps, lake directions, parking details, dock rules, and nearby attractions.</p>
+          <div class="location-details">
+            <div><strong>Business</strong><span>Grand Point Marina</span></div>
+            <div><strong>Area</strong><span>Grand Lake, Oklahoma</span></div>
+            <div><strong>Use</strong><span>Slip rentals and lake access</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking-section" id="contact">
+      <div class="container booking-grid">
+        <div class="booking-copy reveal">
+          <p class="eyebrow white">Book a Slip</p>
+          <h2>Request availability or ask a question.</h2>
+          <p>Use this form as a front-end inquiry form. Right now it gives visitors a clean confirmation message. Later it can be connected to email, a CRM, or a booking system.</p>
+          <div class="booking-highlight">
+            <span id="estimatedTotal">$250</span>
+            <small>estimated first month</small>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="bookingForm">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-row two-col">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" />
+            </div>
+          </div>
+          <div class="form-row two-col">
+            <div>
+              <label for="boatLength">Boat Length</label>
+              <input type="text" id="boatLength" name="boatLength" placeholder="Example: 22 ft" />
+            </div>
+            <div>
+              <label for="months">Rental Length</label>
+              <select id="months" name="months">
+                <option value="1">1 month</option>
+                <option value="3">3 months</option>
+                <option value="6">6 months</option>
+                <option value="12">12 months</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row two-col">
+            <div>
+              <label for="startDate">Preferred Start Date</label>
+              <input type="date" id="startDate" name="startDate" />
+            </div>
+            <div>
+              <label for="requestType">Request Type</label>
+              <select id="requestType" name="requestType">
+                <option>Slip availability</option>
+                <option>General question</option>
+                <option>Webcam information</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you need..."></textarea>
+          </div>
+          <button type="submit" class="btn primary form-btn">Submit Inquiry</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite">This demo form is ready to connect to your preferred email or booking system.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/grand-point-marina-logo.png" alt="Grand Point Marina logo" class="footer-logo" />
+        <p>Grand Point Marina on Grand Lake in Oklahoma.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <a href="#slips">Slip Rentals</a>
+        <a href="#webcam">Webcam</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Add phone number</p>
+        <p>Add email address</p>
+        <p>Add street address</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Grand Point Marina. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
