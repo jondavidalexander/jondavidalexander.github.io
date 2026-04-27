@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Stylized Grand Lake map placeholder">
+  <rect width="1200" height="800" fill="#f6fbff"/>
+  <path d="M385 52 C488 120 442 204 534 250 C629 298 723 265 770 357 C830 472 678 504 736 605 C778 678 876 693 852 756" fill="none" stroke="#1268d6" stroke-width="126" stroke-linecap="round" opacity=".88"/>
+  <path d="M385 52 C488 120 442 204 534 250 C629 298 723 265 770 357 C830 472 678 504 736 605 C778 678 876 693 852 756" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".42"/>
+  <circle cx="770" cy="357" r="30" fill="#0b0f14"/>
+  <circle cx="770" cy="357" r="15" fill="#fff"/>
+  <path d="M820 300 H1085 Q1110 300 1110 325 V440 Q1110 465 1085 465 H820 Q795 465 795 440 V325 Q795 300 820 300Z" fill="#fff" stroke="#0b0f14" stroke-width="5"/>
+  <text x="842" y="362" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" fill="#0b0f14">Grand Point</text>
+  <text x="842" y="406" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#1268d6">Marina</text>
+  <text x="50" y="725" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#0b0f14">Grand Lake, Oklahoma</text>
+</svg>

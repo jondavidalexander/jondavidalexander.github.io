@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Placeholder marina slips image">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#0b63ce"/><stop offset="1" stop-color="#07264a"/></linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#eef7ff"/>
+  <rect y="330" width="1200" height="470" fill="url(#g)"/>
+  <path d="M0 365 C140 335 290 392 420 362 S700 330 850 370 S1080 405 1200 365" fill="none" stroke="#fff" stroke-width="7" opacity=".35"/>
+  <path d="M0 485 C120 455 260 510 390 482 S680 450 830 492 S1060 525 1200 480" fill="none" stroke="#fff" stroke-width="7" opacity=".28"/>
+  <g transform="translate(180 350)">
+    <rect x="0" y="110" width="830" height="56" rx="12" fill="#111"/>
+    <rect x="30" y="88" width="770" height="34" rx="8" fill="#fff"/>
+    <g fill="#0d1b2a">
+      <rect x="75" y="95" width="18" height="220" rx="5"/><rect x="245" y="95" width="18" height="220" rx="5"/><rect x="415" y="95" width="18" height="220" rx="5"/><rect x="585" y="95" width="18" height="220" rx="5"/><rect x="755" y="95" width="18" height="220" rx="5"/>
+    </g>
+    <g fill="#fff" opacity=".94">
+      <path d="M86 8 C128 -18 201 -6 226 54 L202 54 L188 85 L123 85 L110 54 L70 54 C73 32 77 18 86 8Z"/><path d="M450 6 C490 -18 565 -5 588 55 L560 55 L548 86 L487 86 L470 54 L430 54 C435 31 441 15 450 6Z"/>
+    </g>
+    <g stroke="#0b63ce" stroke-width="8"><line x1="84" y1="58" x2="219" y2="58"/><line x1="450" y1="58" x2="586" y2="58"/></g>
+  </g>
+  <text x="50" y="90" fill="#0d1b2a" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800">Marina Slip Placeholder</text>
+  <text x="50" y="142" fill="#39516b" font-family="Arial, Helvetica, sans-serif" font-size="26">Replace with a real Grand Point Marina photo later.</text>
+</svg>
